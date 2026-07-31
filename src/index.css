@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MyOsteopathy Design System - Healthcare Appointment Platform
+   Colors: Calming teal primary, warm accents, professional aesthetic
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 99%;
+    --foreground: 210 40% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 11%;
+
+    /* Teal primary - calming, medical, trustworthy */
+    --primary: 174 62% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 40% 11%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 15% 45%;
+
+    /* Soft mint accent */
+    --accent: 168 40% 92%;
+    --accent-foreground: 174 62% 28%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success green for availability */
+    --success: 152 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning amber for ratings */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 174 62% 38%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 174 62% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 168 40% 95%;
+    --sidebar-accent-foreground: 174 62% 28%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 174 62% 38%;
+  }
+
+  .dark {
+    --background: 210 40% 6%;
+    --foreground: 210 20% 96%;
+
+    --card: 210 35% 10%;
+    --card-foreground: 210 20% 96%;
+
+    --popover: 210 35% 10%;
+    --popover-foreground: 210 20% 96%;
+
+    --primary: 174 55% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 30% 15%;
+    --secondary-foreground: 210 20% 96%;
+
+    --muted: 210 30% 15%;
+    --muted-foreground: 210 15% 60%;
+
+    --accent: 174 30% 18%;
+    --accent-foreground: 174 55% 60%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 152 50% 35%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 80% 45%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 210 30% 18%;
+    --input: 210 30% 18%;
+    --ring: 174 55% 45%;
+
+    --sidebar-background: 210 35% 8%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 174 55% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 174 30% 15%;
+    --sidebar-accent-foreground: 174 55% 60%;
+    --sidebar-border: 210 30% 18%;
+    --sidebar-ring: 174 55% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
